@@ -17,37 +17,22 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/meal" />
+            android:text="@string/guide" />
 
         <Button
             android:id="@+id/recipeBtnTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/guide" />
+            android:text="@string/meal" />
 
     </LinearLayout>
 
-  <!--  <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <fragment
+            android:id="@+id/fragment_container"
+            class="ua.com.comeonbabe.fragment.RecipeListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
-    </FrameLayout>-->
-
-     <fragment
-         android:id="@+id/fragment_container"
-         android:name="ua.com.comeonbabe.fragment.RecipeListFragment"
-         android:layout_width="wrap_content"
-         android:layout_height="match_parent">
-     </fragment>
-
-    <!--<LinearLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-    </LinearLayout>-->
 
 </LinearLayout>

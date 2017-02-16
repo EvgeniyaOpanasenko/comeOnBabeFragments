@@ -1,21 +1,24 @@
 package ua.com.comeonbabe;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
 import ua.com.comeonbabe.adaptor.CustomListAdapter;
+import ua.com.comeonbabe.fragment.GuideListFragment;
 import ua.com.comeonbabe.fragment.RecipeListFragment;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends FragmentActivity {
 
     Fragment fragment;
     Button guideBtn;
@@ -60,13 +63,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        guideBtn = (Button) findViewById(R.id.guideBtnTop);
-        guideBtn.setOnClickListener(this);
-
-        receptionBtn = (Button) findViewById(R.id.recipeBtnTop);
-        receptionBtn.setOnClickListener(this);
-
-        fragment = new RecipeListFragment();
         CustomListAdapter adapter = new CustomListAdapter(this, title, imgid);
         list = (ListView) findViewById(R.id.list_view);
         list.setAdapter(adapter);
@@ -83,37 +79,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             }
         });
-    }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.recipeBtnTop:
-                System.out.println("hello from btn 1");
-                initFragment_1();
-                break;
-            case R.id.guideBtnTop:
-                System.out.println("hello from btn 2");
-                initFragment_2();
-                break;
+        View.OnClickListener listener = new View.OnClickListener() {
+            public void onClick(View view) {
+
+                if (view == findViewById(R.id.guideBtnTop)) {
+                    fragment = new GuideListFragment();
+                } else {
+                    fragment = new RecipeListFragment();
+                }
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentTransaction transaction = manager.beginTransaction();
+                transaction.replace(R.id.fragment_container, fragment);
+                transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        };
+
+            RecipeListFragment recipeListFragment = new RecipeListFragment();
+            recipeListFragment.setArguments(getIntent().getExtras());
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.fragment_container, recipeListFragment).commit();
+
+            guideBtn = (Button) findViewById(R.id.guideBtnTop);
+            guideBtn.setOnClickListener(listener);
+
+            receptionBtn = (Button) findViewById(R.id.recipeBtnTop);
+            receptionBtn.setOnClickListener(listener);
         }
+
     }
-
-    private void initFragment_1() {
-
-      /*  fragment = new RecipeListFragment();
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        //ft.replace(R.id.fragment_frame,fragment);
-        ft.replace(R.id.fragment_list, fragment);
-        ft.commit();*/
-    }
-
-    private void initFragment_2() {
-
-        fragment = new RecipeListFragment();
-
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.fragment_container, fragment);
-        ft.commit();
-    }
-}

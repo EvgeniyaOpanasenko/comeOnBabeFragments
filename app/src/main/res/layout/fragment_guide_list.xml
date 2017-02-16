@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ua.com.comeonbabe.fragment.GuideListFragment">
+    tools:context="ua.com.comeonbabe.fragment.GuideListFragment"
+    android:background="#ffffff">
 
     <!-- TODO: Update blank fragment layout -->
     <ListView android:id="@id/android:list"

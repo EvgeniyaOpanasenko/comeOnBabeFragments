@@ -5,4 +5,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="meal">Recipe</string>
     <string name="guide">Guide</string>
+    <string name="title_activity_show_img_guide">ShowImgGuide</string>
 </resources>

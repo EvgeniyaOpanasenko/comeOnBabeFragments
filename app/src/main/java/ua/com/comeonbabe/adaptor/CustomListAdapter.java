@@ -21,7 +21,6 @@ public class CustomListAdapter extends ArrayAdapter<String> {
 
     public CustomListAdapter(Activity context, String[] title, Integer[] imgid) {
         super(context, R.layout.list_recepi, title);
-        // TODO Auto-generated constructor stub
 
         this.context = context;
         this.title = title;
@@ -42,5 +41,4 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         return rowView;
 
     };
-
 }
