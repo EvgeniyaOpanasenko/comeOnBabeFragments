@@ -12,6 +12,33 @@
     </item>
     <item
         is-multidex="false"
+        jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_cab28d8691d12ad32ee24151f533cb05d7b3ed68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_6cbabe32e74f2b6d236d6702f43ebae84e4f5f23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.1.0_5f3a65c699438778679bbbc639ee6b33bb5c3177.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -30,15 +57,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_cab28d8691d12ad32ee24151f533cb05d7b3ed68.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -48,12 +66,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_6cbabe32e74f2b6d236d6702f43ebae84e4f5f23.jar" />
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.1.0_574deacc8b8d70b5186455dea25cca6b5f7dd095.jar" />
     </item>
     <item
         is-multidex="false"
@@ -90,6 +108,15 @@
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_fd4adb8ad424614aea14019d2cc8e9f4b084ee28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="D:\androidDevelopment\ComeOnBabeCucromView_09_02_17\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.0_7d7c6e790787f924d1e80705e19ba3be556672c7.jar" />
     </item>
 
 </items>
